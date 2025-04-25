@@ -1,0 +1,112 @@
+## ComfyUI-Manager: installing dependencies done.
+[2025-04-08 18:08:34.070] ** ComfyUI startup time: 2025-04-08 18:08:34.070363
+[2025-04-08 18:08:34.070] ** Platform: Linux
+[2025-04-08 18:08:34.070] ** Python version: 3.10.15 | packaged by conda-forge | (main, Sep 30 2024, 17:51:04) [GCC 13.3.0]
+[2025-04-08 18:08:34.070] ** Python executable: /opt/conda/envs/fuzer/bin/python
+[2025-04-08 18:08:34.070] ** ComfyUI Path: /home/comdoleger1/zen-flux-style-shape
+[2025-04-08 18:08:34.070] ** Log path: /home/comdoleger1/zen-flux-style-shape/comfyui.log
+[2025-04-08 18:08:35.142] 
+Prestartup times for custom nodes:
+[2025-04-08 18:08:35.143]    0.0 seconds: /home/comdoleger1/zen-flux-style-shape/custom_nodes/rgthree-comfy
+[2025-04-08 18:08:35.143]    2.0 seconds: /home/comdoleger1/zen-flux-style-shape/custom_nodes/ComfyUI-Manager
+[2025-04-08 18:08:35.143] 
+Using pytorch cross attention
+[2025-04-08 18:08:37.288] Could not find the extra_model_paths config file.
+[2025-04-08 18:08:37.292] ****** User settings have been changed to be stored on the server instead of browser storage. ******
+[2025-04-08 18:08:37.292] ****** For multi-user setups add the --multi-user CLI argument to enable multiple user profiles. ******
+[2025-04-08 18:08:37.292] [Prompt Server] web root: /home/comdoleger1/zen-flux-style-shape/web
+[2025-04-08 18:08:37.578] Traceback (most recent call last):
+  File "/home/comdoleger1/zen-flux-style-shape/nodes.py", line 2037, in load_custom_node
+    module_spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/comdoleger1/zen-flux-style-shape/comfy_extras/nodes_audio.py", line 1, in <module>
+    import torchaudio
+  File "/opt/conda/envs/fuzer/lib/python3.10/site-packages/torchaudio/__init__.py", line 2, in <module>
+    from . import _extension  # noqa  # usort: skip
+  File "/opt/conda/envs/fuzer/lib/python3.10/site-packages/torchaudio/_extension/__init__.py", line 38, in <module>
+    _load_lib("libtorchaudio")
+  File "/opt/conda/envs/fuzer/lib/python3.10/site-packages/torchaudio/_extension/utils.py", line 60, in _load_lib
+    torch.ops.load_library(path)
+  File "/opt/conda/envs/fuzer/lib/python3.10/site-packages/torch/_ops.py", line 1357, in load_library
+    ctypes.CDLL(path)
+  File "/opt/conda/envs/fuzer/lib/python3.10/ctypes/__init__.py", line 374, in __init__
+    self._handle = _dlopen(self._name, mode)
+OSError: /opt/conda/envs/fuzer/lib/python3.10/site-packages/torchaudio/lib/libtorchaudio.so: undefined symbol: _ZN2at4_ops9fft_irfft4callERKNS_6TensorESt8optionalIN3c106SymIntEElS5_INS6_17basic_string_viewIcEEE
+
+[2025-04-08 18:08:37.578] Cannot import /home/comdoleger1/zen-flux-style-shape/comfy_extras/nodes_audio.py module for custom nodes: /opt/conda/envs/fuzer/lib/python3.10/site-packages/torchaudio/lib/libtorchaudio.so: undefined symbol: _ZN2at4_ops9fft_irfft4callERKNS_6TensorESt8optionalIN3c106SymIntEElS5_INS6_17basic_string_viewIcEEE
+[2025-04-08 18:08:38.216] ------------------------------------------
+[2025-04-08 18:08:38.216] [34mComfyroll Studio v1.76 : [92m 175 Nodes Loaded[0m
+[2025-04-08 18:08:38.216] ------------------------------------------
+[2025-04-08 18:08:38.216] ** For changes, please see patch notes at https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes/blob/main/Patch_Notes.md
+[2025-04-08 18:08:38.216] ** For help, please see the wiki at https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes/wiki
+[2025-04-08 18:08:38.216] ------------------------------------------
+[2025-04-08 18:08:38.220] Total VRAM 81038 MB, total RAM 171070 MB
+[2025-04-08 18:08:38.220] pytorch version: 2.6.0+cu124
+[2025-04-08 18:08:38.220] Set vram state to: NORMAL_VRAM
+[2025-04-08 18:08:38.221] Device: cuda:0 NVIDIA A100-SXM4-80GB : native
+[2025-04-08 18:08:40.857] [36;20m[comfy_mtb] | INFO -> loaded [96m81[0m nodes successfuly[0m
+[2025-04-08 18:08:40.857] [36;20m[comfy_mtb] | INFO -> Some nodes (9) could not be loaded. This can be ignored, but go to http://127.0.0.1:8188/mtb if you want more information.[0m
+[2025-04-08 18:08:40.859] ### Loading: ComfyUI-Manager (V2.54)
+[2025-04-08 18:08:40.870] ### ComfyUI Revision: 33 on 'main' [96f0f3d8] | Released on '2024-12-19'
+[2025-04-08 18:08:40.889] 
+[2025-04-08 18:08:40.889] [92m[rgthree-comfy] Loaded 42 exciting nodes. 🎉[00m
+[2025-04-08 18:08:40.889] 
+[2025-04-08 18:08:40.917] xFormers not available
+[2025-04-08 18:08:40.921] xFormers not available
+[2025-04-08 18:08:40.924] 
+Import times for custom nodes:
+[2025-04-08 18:08:40.925]    0.0 seconds: /home/comdoleger1/zen-flux-style-shape/custom_nodes/websocket_image_save.py
+[2025-04-08 18:08:40.926]    0.0 seconds: /home/comdoleger1/zen-flux-style-shape/custom_nodes/ComfyUI-to-Python-Extension
+[2025-04-08 18:08:40.926]    0.0 seconds: /home/comdoleger1/zen-flux-style-shape/custom_nodes/ComfyUI-DepthAnythingV2
+[2025-04-08 18:08:40.927]    0.0 seconds: /home/comdoleger1/zen-flux-style-shape/custom_nodes/ComfyUI-Manager
+[2025-04-08 18:08:40.928]    0.0 seconds: /home/comdoleger1/zen-flux-style-shape/custom_nodes/rgthree-comfy
+[2025-04-08 18:08:40.929]    0.0 seconds: /home/comdoleger1/zen-flux-style-shape/custom_nodes/ComfyUI_essentials
+[2025-04-08 18:08:40.929] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/model-list.json
+[2025-04-08 18:08:40.930]    0.0 seconds: /home/comdoleger1/zen-flux-style-shape/custom_nodes/ComfyUI-KJNodes
+[2025-04-08 18:08:40.930]    0.1 seconds: /home/comdoleger1/zen-flux-style-shape/custom_nodes/ComfyUI-SaveAsScript
+[2025-04-08 18:08:40.930]    0.6 seconds: /home/comdoleger1/zen-flux-style-shape/custom_nodes/ComfyUI_Comfyroll_CustomNodes
+[2025-04-08 18:08:40.931]    2.6 seconds: /home/comdoleger1/zen-flux-style-shape/custom_nodes/comfy_mtb
+[2025-04-08 18:08:40.931] 
+[2025-04-08 18:08:40.931] WARNING: some comfy_extras/ nodes did not import correctly. This may be because they are missing some dependencies.
+
+[2025-04-08 18:08:40.931] IMPORT FAILED: nodes_audio.py
+[2025-04-08 18:08:40.931] 
+This issue might be caused by new missing dependencies added the last time you updated ComfyUI.
+[2025-04-08 18:08:40.931] Please do a: pip install -r requirements.txt
+[2025-04-08 18:08:40.931] 
+[2025-04-08 18:08:40.937] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/alter-list.json
+[2025-04-08 18:08:40.968] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/github-stats.json
+[2025-04-08 18:08:41.010] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/extension-node-map.json
+[2025-04-08 18:08:41.067] [ComfyUI-Manager] default cache updated: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json
+[2025-04-08 18:08:41.207] /opt/conda/envs/fuzer/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:1601: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be depracted in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+[2025-04-08 18:08:42.630] clip missing: ['text_projection.weight']
+[2025-04-08 18:08:42.890] Using pytorch attention in VAE
+[2025-04-08 18:08:42.892] Using pytorch attention in VAE
+[2025-04-08 18:08:43.101] model weight dtype torch.bfloat16, manual cast: None
+[2025-04-08 18:08:43.102] model_type FLUX
+[2025-04-08 18:08:48.130] Loading model from: /home/comdoleger1/zen-flux-style-shape/models/depthanything/depth_anything_v2_vitl_fp32.safetensors
+[2025-04-08 18:08:48.133] using MLP layer as FFN
+[2025-04-08 18:08:49.045] Requested to load AutoencodingEngine
+[2025-04-08 18:08:49.045] Requested to load FluxClipModel_
+[2025-04-08 18:08:49.045] Requested to load Flux
+[2025-04-08 18:08:49.045] Requested to load CLIPVisionModelProjection
+[2025-04-08 18:08:49.046] Loading 4 new models
+[2025-04-08 18:08:49.108] loaded completely 0.0 159.87335777282715 True
+[2025-04-08 18:08:51.444] loaded completely 0.0 9319.23095703125 True
+[2025-04-08 18:08:57.903] loaded completely 0.0 22700.509887695312 True
+[2025-04-08 18:08:58.142] loaded completely 0.0 787.7150573730469 True
+[2025-04-08 18:08:58.502] * Running on local URL:  http://127.0.0.1:7860
+[2025-04-08 18:08:58.513] HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+[2025-04-08 18:08:58.531] HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+[2025-04-08 18:08:58.885] HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+[2025-04-08 18:08:59.223] HTTP Request: GET https://api.gradio.app/v3/tunnel-request "HTTP/1.1 200 OK"
+[2025-04-08 18:08:59.926] * Running on public URL: https://c39c69141482606010.gradio.live
+[2025-04-08 18:08:59.926] 
+This share link expires in 72 hours. For free permanent hosting and GPU upgrades, run `gradio deploy` from the terminal in the working directory to deploy to Hugging Face Spaces (https://huggingface.co/spaces)
+[2025-04-08 18:11:03.648] Requested to load ControlNetFlux
+[2025-04-08 18:11:03.649] Loading 1 new model
+[2025-04-08 18:11:04.044] loaded completely 0.0 1418.6997985839844 True
+[2025-04-08 18:12:37.732] Keyboard interruption in main thread... closing server.
+[2025-04-08 18:12:37.852] Killing tunnel 127.0.0.1:7860 <> https://c39c69141482606010.gradio.live

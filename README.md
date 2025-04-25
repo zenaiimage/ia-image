@@ -19,7 +19,7 @@ Baseten Integration: Uses Baseten API for image generation (requires API key and
 Installation
 
 Clone the Repository:
-git clone https://github.com/FotographerAI/AIImage.git
+git clone git@github.com:zenaiimage/ia-image.git
 cd AIImage
 
 
